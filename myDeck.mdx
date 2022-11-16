@@ -9,11 +9,16 @@ import ReactLogo from './ReactLogo'
 import reactBrain from './images/reactBrain.png';
 import islide0 from './RSCIntroSlides/slide0.png';
 import islide1 from './RSCIntroSlides/slide1.png';
-import islide1a from './RSCIntroSlides/slide1.1.png';
 import islide2 from './RSCIntroSlides/slide2.png';
 import islide3 from './RSCIntroSlides/slide3.png';
 import islide4 from './RSCIntroSlides/slide4.png';
 import islide5 from './RSCIntroSlides/slide5.png';
+import islide6 from './RSCIntroSlides/slide6.png';
+import islide7 from './RSCIntroSlides/slide7.png';
+import islide8 from './RSCIntroSlides/slide8.png';
+import islide9 from './RSCIntroSlides/slide9.png';
+import islide10 from './RSCIntroSlides/slide10.png';
+import slide1 from './RSCSlides/slide1.png';
 import slide2 from './RSCSlides/slide2.png';
 import slide3 from './RSCSlides/slide3.png';
 import slide4 from './RSCSlides/slide4.png';
@@ -33,20 +38,37 @@ import slide17 from './RSCSlides/slide17.png';
 import slide18 from './RSCSlides/slide18.png';
 import slide19 from './RSCSlides/slide19.png';
 import slide20 from './RSCSlides/slide20.png';
+import thanks from './RSCSlides/thankyou.png';
+import tslide0 from './introSlides/slide0.png';
 import tslide1 from './introSlides/slide1.png';
 import tslide2 from './introSlides/slide2.png';
 import tslide3 from './introSlides/slide3.png';
 import tslide4 from './introSlides/slide4.png';
+import tslide7 from './introSlides/slide7.png';
+import tslide8 from './introSlides/slide8.png';
 import tslide5 from './introSlides/slide5.png';
 import tslide6 from './introSlides/slide6.png';
+import what from './whatt.gif';
 
 import "prismjs/components/prism-smalltalk"
 
 
 export const theme = nightOwl;
 
-# React Server Components
+## React Server Components
 <ReactLogo />
+
+---
+
+### What is Frontend dev's favourite bread?
+
+---
+
+## NaN (नान)
+
+---
+
+<img src={tslide0} width='80%'/>
 
 ---
 
@@ -66,6 +88,14 @@ export const theme = nightOwl;
 
 ---
 
+<img src={tslide7} width='80%'/>
+
+---
+
+<img src={tslide8} width='80%'/>
+
+---
+
 <img src={tslide5}  width='80%' />
 
 ---
@@ -81,15 +111,11 @@ export const theme = nightOwl;
 
 ---
 
-<img src={islide1a} width='80%'/>
+<img src={islide2} width='80%'/>
 
 ---
 
 <img src={islide3}  width='80%' />
-
----
-
-<img src={islide2}  width='80%'/>
 
 ---
 
@@ -98,6 +124,34 @@ export const theme = nightOwl;
 ---
 
 <img src={islide5}  width='80%'/>
+
+---
+
+<img src={islide6}  width='80%'/>
+
+---
+
+<img src={islide7}  width='80%'/>
+
+---
+
+<img src={islide8}  width='80%'/>
+
+---
+
+<img src={what} height="70%" width="70%"/>
+
+---
+
+<img src={islide9} />
+
+---
+
+### Shopify Hydrogen
+
+---
+
+<img src={islide10} />
 
 ---
 
@@ -528,57 +582,89 @@ export default function EmailList() {
 
 ---
 
-### How React is achieving this??
-
-<img src={reactBrain} height='200' width='200'/>
+### Challenges 
 
 ---
 
-<img src={slide2} width='80%'/>
+<img src={slide1}/>
 
 ---
 
-<img src={slide3} width='80%'/>
+<CodeSurfer>
+
+```js
+
+export default function MyClientComponent() {
+    return (
+        <div>
+            This code is rendered on the client
+        </div>
+    );
+}
+
+```
+
+```js
+
+import MyServerComponent from './MyServerComponent.server.js'
+export default function MyClientComponent() {
+    return (
+        <div>
+            This code is rendered on the client
+            <MyServerComponent />
+        </div>
+    );
+}
+
+```
+
+```js
+
+export default function MyClientComponent({children}) {
+    return (
+        <div>
+            This code is rendered on the client
+            {children}
+        </div>
+    );
+}
+
+```
+
+
+
+</CodeSurfer>
 
 ---
 
-<img src={slide4}  width='80%'/>
+<CodeSurfer>
+
+```js
+
+export default function MyContainerServerComponent() {
+    return (
+        <MyClientComponent >
+            <MyServerComponent />
+        </MyClientComponent>
+    );
+}
+
+```
+
+</CodeSurfer>
 
 ---
 
-<img src={slide5}  width='80%'/>
+<img src={slide2} />
 
 ---
 
-<img src={slide6}  width='80%'/>
+<img src={slide3}  width='80%'/>
+
 
 ---
 
-<img src={slide7} width='80%'/>
-
----
-
-<img src={slide8} width='80%'/>
-
----
-
-<img src={slide9}/>
-
----
-
-<img src={slide10}/>
-
----
-
-<img src={slide11}/>
-
----
-
-<img src={slide12}/>
-
----
-
-<img src={slide13} width='70%'/>
+<img src={slide13} width='70%' height='70%'/>
 
 ---
 
@@ -590,12 +676,15 @@ export default function EmailList() {
 
 ---
 
-<img src={slide16}/>
+<img src={slide16} />
 
 ---
 
-<img src={slide17} height='80%'/>
+<img src={slide17} />
 
 ---
 
-# Thankyou
+<img src={thanks} width='80%' />
+
+
+
